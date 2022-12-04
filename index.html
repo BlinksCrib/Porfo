@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="/swiper-bundle.min.css">
+    <title>Portifolio design </title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                 <!-- <img src="/images/logo.png" alt=""> -->
+                 <SPAN>LAKESMAN</SPAN>
+            </a>
+            <div class="nav__menu display" id="nav-menu">
+                <ul>
+                    <li onclick="closenav()"><a href="#" class="active_link">Home</a></li>
+                    <li onclick="closenav()"><a href="#">About</a></li>
+                    <li onclick="closenav()"><a href="#">Services</a></li>
+                    <li onclick="closenav()"><a href="#">Work</a></li>
+                    <li onclick="closenav()"><a href="#">Experience</a></li>
+                    <li onclick="closenav()"><a href="#">Contact</a></li>
+                </ul>
+                <div class="nav__close">
+                    <span class="material-symbols-sharp" id="close">
+                        close
+                    </span>
+                </div>
+            </div>
+            <div id="menu-btn">
+                <span class="material-symbols-sharp">menu</span>
+            </div>
+        </nav>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home container" id="home">
+            <div class="home__container">
+                <div class="home-data">
+                    <h3 class="home-subtitle">Hello</h3>
+                    <h1 class="home-title">I'm <span> Onanuga Yusuf </span></h1>
+                    <div class="home-buttons">
+                        <span>Web Developer</span>
+                        <span>Historian</span>
+                        <span>Writer</span>
+                    </div>
+                </div>
+
+                <div class="home-images">
+                    <img src="/images/photography-img9.jpg" alt="" class="home__img">
+                    <div class="swiper home-swiper">
+                        <div class="swiper-wrapper">
+                            <img src="/images/photography-img1.jpg" alt="" class="swiper-slide slide__img">
+                            <img src="/images/photography-img6.jpg" alt="" class="swiper-slide slide__img">
+                            <img src="/images/photography-img7.jpg" alt="" class="swiper-slide slide__img">
+                            <img src="/images/photography-img12.jpg" alt="" class="swiper-slide slide__img">
+                            <img src="/images/photography-img11.jpg" alt="" class="swiper-slide slide__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="home__group">
+                <div class="home__details">
+                    <p class="home__description">I help our clients create <span> brands </span>, build digital <span> products </span> and <span> services </span>, innovate, find opportunities, and validate ideas.
+                    </p>
+
+                    <div class="home__socials">
+                        <span class="home__social-follow">Follow me on </span>
+
+                        <div class="home__social-link">
+                            <a href="#" class="home__social-links">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Like on Facebook</span>
+                            </a>
+                            <a href="#" class="home__social-links">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Follow on Instagram</span>
+                            </a>
+                            <a href="#" class="home__social-links">
+                                <i class="fa-brands fa-twitter"></i>
+                                <span>Follow on Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="img">
+                <img src="/images/experience-img.jpg" alt="" class="experienes">
+               </div>
+            </div>
+        </section>
+          <!--=============== ABOUT ===============-->
+          <section class="about section" id="about">
+              <div class="about__container container">
+                  <img src="/images/about__img.png" alt="" class="about__img">
+                  <div class="about__data">
+                      <span class="section__subtitle about__subtitle">My Intro</span>
+                      <h2 class="section__title about__tittle">About Me</h2>
+                      <p class="about__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                      <p class="about__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat dolore magna aliqua Ut enim ad minim veniam duis aute irure dolor in reprehende.
+                    </p>
+                      <div class="about__award">
+                          <img src="/images/award-img.png" alt="" class="award__img">
+                          <div>
+                              <h3 class="award__title">International Photography <br> Awards 2016
+                              </h3>
+                              <p class="award__details">
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit and fugit.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </section>
+        <section class="services section" id="services">
+            <span class="section__subtitle">My Services</span>
+             <h2 class="section__title">What I Offer</h2>
+
+             <div class="services__container container">
+                 <div class="services__tab">
+                     <div>
+                         <h3 class="services__button servics__active" data-target="#food__photography">Food Photography</h3>
+                     </div>
+                     <div>
+                         <h3 class="services__button" data-target="#wedding__photoshoot"">Wedding Photoshoot</h3>
+                     </div>
+                     <div>
+                         <h3 class="services__button" data-target="#product__art"">Product Art</h3>
+                     </div>
+                     <div>
+                         <h3 class="services__button"  data-target="#drone__Videography">Drone Videography</h3>
+                     </div>
+                 </div>
+                 <div class="services__content">
+                     <div class="services__group  servics__active" data-content        id="food__photography">
+                         <div class="services__item">
+                             <img src="/images/service-1.png" alt="" class="services__img">
+
+                             <div class="services__data">
+                                 <h3 class="services__title">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                </h3>
+                                 <p class="services__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+                                </p>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="services__group"  data-content id="wedding__photoshoot">
+                        <div class="services__item">
+                            <img src="/images/service-2.png" alt="" class="services__img">
+
+                            <div class="services__data">
+                                <h3 class="services__title">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                               </h3>
+                                <p class="services__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__group"  data-content id="product__art">
+                        <div class="services__item">
+                            <img src="/images/service-3.png" alt="" class="services__img">
+
+                            <div class="services__data">
+                                <h3 class="services__title">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                               </h3>
+                                <p class="services__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__group"  data-content id="drone__Videography">
+                        <div class="services__item">
+                            <img src="/images/service-4.png" alt="" class="services__img">
+
+                            <div class="services__data">
+                                <h3 class="services__title">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                               </h3>
+                                <p class="services__details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </section>
+         <!--=============== WORK ===============-->
+         <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
+
+            <div class="work__container container">
+                <div class="work__content">
+                    <img src="/images/photography-img1.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                <div class="work__content">
+                    <img src="/images/photography-img2.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                <div class="work__content">
+                    <img src="/images/photography-img3.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                <div class="work__content">
+                    <img src="/images/photography-img4.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                <div class="work__content">
+                    <img src="/images/photography-img5.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                <div class="work__content">
+                    <img src="/images/photography-img6.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                <div class="work__content">
+                    <img src="/images/photography-img7.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                <div class="work__content">
+                    <img src="/images/photography-img8.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                <div class="work__content">
+                    <img src="/images/photography-img9.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                <div class="work__content">
+                    <img src="/images/photography-img10.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                <div class="work__content">
+                    <img src="/images/photography-img11.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                <div class="work__content">
+                    <img src="/images/photography-img12.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+            </div>
+        </section>
+             <!--=============== PROJECT ===============-->
+             <section class="project section">
+                 <div class="project__bg">
+                     <div class="project__container container">
+                         <h2 class="project__title">Want to work together!</h2>
+                         <p class="project__description">I'm availabel for freelance work.</p>
+                         <button class="button">Hire me</button>
+                     </div>
+                 </div>
+            </section>
+              <!--=============== EXPERIENCE ===============-->
+        <section class="experience section" id="experience">
+            <span class="section__subtitle">My Journey</span>
+            <h2 class="section__title">My Experience</h2>
+             
+
+            <div class="qualification__container container">
+                <div class="experience">
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <span class="timeline__date">
+                                <i class="fa-solid fa-calendar"></i> 2018 - Present 
+                            </span>
+                            <h3 class="timeline__title">Historian</h3>
+                            <p class="timeline__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationr</p>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <span class="timeline__date">
+                                <i class="fa-solid fa-calendar"></i>  2015 - 2018
+                            </span>
+                            <h3 class="timeline__title">Web Developer  & Designer</h3>
+                            <p class="timeline__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationr</p>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <span class="timeline__date">
+                                <i class="fa-solid fa-calendar"></i>  2017-Present
+                            </span>
+                            <h3 class="timeline__title">Writer</h3>
+                            <p class="timeline__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationr</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!--=============== CONTACT ===============-->
+                <section class="contact section" id="contact">
+                    <span class="section__subtitle">Get in touch</span>
+                    <h2 class="section__title">Contact Me</h2>
+
+                    <div class="contact__container container">
+                        <div class="contact__content">
+                            <form action="" class="contact__form">
+                                <div class="contact__form-group">
+                                    <div class="contact__form-div">
+                                        <label for="" class="contact__form-tag">Name</label>
+                                        <input type="text" class="contact__form-input" placeholder="Enter Your Name  ">
+                                    </div>
+                                    <div class="contact__form-div">
+                                        <label for="" class="contact__form-tag">Mail</label>
+                                        <input type="text" class="contact__form-input" placeholder="Enter Your Email Address">
+                                    </div>
+                                </div>
+                                <div class="contact__form-div">
+                                    <label for="" class="contact__form-tag">Subject</label>
+                                    <input type="text" class="contact__form-input" placeholder="Enter Your Subject">
+                                </div>
+                                <div class="contact__form-div contact__form-area">
+                                    <label for="" class="contact__form-tag">Message</label>
+                                   <textarea name="" id=""  rows="10" cols="30" class="contact__form-input" placeholder="Write Your Message"></textarea>
+                                </div>
+
+                                <button class="button">Send mesage </button>
+                            </form>
+                        </div>
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <div>
+                                    <i class="fa-solid fa-location contact__icon"></i>
+                                    <h3 class="contact__card-title">My Location</h3>
+                                </div>
+
+                                <span class="contact__card-data">PO Box 16122, Collins, Victoria 3000, Australia</span>
+                            </div>
+                            <div class="contact__card">
+                                <div>
+                                    <i class="fa-solid fa-phone contact__icon"></i>
+                                    <h3 class="contact__card-title">Give a Call</h3>
+                                </div>
+
+                                <span class="contact__card-data">999-888-777</span>
+                            </div>
+                            <div class="contact__card">
+                                <div>
+                                    <i class="fa-solid fa-message contact__icon"></i>
+                                    <h3 class="contact__card-title">Email Me</h3>
+                                </div>
+
+                                <span class="contact__card-data">sayhello@example.com</span>
+                            </div>
+                            <div class="home__socials">
+        
+                                <div class="home__social-link">
+                                    <a href="#" class="home__social-links">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <span>Like on Facebook</span>
+                                    </a>
+                                    <a href="#" class="home__social-links">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <span>Follow on Instagram</span>
+                                    </a>
+                                    <a href="#" class="home__social-links">
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <span>Follow on Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                    <!--=============== FOOTER ===============-->
+                    <footer class="footer">
+                        <div class="footer__container container">
+                            <h1 class="footer__title">Alycia</h1>
+
+                            <ul class="footer__list">
+                                <li><a href="#" class="footer__link">About</a> </li>        
+                                <li><a href="#" class="footer__link"> Projects</a></li>        
+                                <li><a href="#" class="footer__link">Testimonials</a> </li>        
+                            </ul>
+                            <div class="footer__socials">
+                                        <a href="#" class="footer__social-links">
+                                        <i class="fa-brands fa-facebook"></i>
+
+                                        </a>
+                                        <a href="#" class="footer__social-links">
+                                        <i class="fa-brands fa-twitter"></i>
+
+                                        </a>
+                                        <a href="#" class="footer__social-links">
+                                        <i class="fa-brands fa-instagram"></i>
+
+                                        </a>
+                            </div>
+                            <span class="footer__copy">
+                                &#169; crypticalcoder. All rights reserved
+                            </span>
+                        </div>
+                    </footer>
+        
+
+    </main>
+<script src="/swiper-bundle.min.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>
